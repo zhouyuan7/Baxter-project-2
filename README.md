@@ -8,7 +8,7 @@ This is my second Baxter project and my first solo Baxter project. This is also 
 
 This project can also be classified into a visual servoing control method. Compared with my first baxter project, this is an off-line spatial target position estimation and position-veocity Jacobian control. In detail, this project can also be divided into vision and motion parts.
 
-For vision part 
+For vision part, the pattern recognition is the same as the first project using color separation method. However, the process of transforming the location information from camera image frame to Baxter coordinate is different. In this project we use both two arms' hand cameras and use linear triangulation and single value decomposition method to estimate the target location in Baxter coordinate system.  
 
 
 ![Output sample](https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/table_baxter.gif)
