@@ -12,6 +12,8 @@ For vision part, the pattern recognition is the same as the first project using 
 
 ![alt text](https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/baxter_vision.png)
 
+For motion part, 
+
 
 ![Output sample](https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/table_baxter.gif)
 
