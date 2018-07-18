@@ -33,9 +33,7 @@ With a potential function based on the start point and estimated goal point, usi
 
 
 #### Position-velocity control
-
-<img src="http://chart.googleapis.com/chart?cht=tx&chl= $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
-" style="border:none;">
+For this project, I generate a control strategy between the above two levels of control. This control is actually still a position control because the output data still go through the joint angle API not joint velocity, but with a particular trajectory. The following one line algorithm show the strategy.
 
 
 
