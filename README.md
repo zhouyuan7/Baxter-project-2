@@ -1,7 +1,9 @@
 # Baxter-project-2
 
 ![Output sample](https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/hand_baxter.gif)
+Position-inverse Kinematic Control
 ![Output sample](https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/table_own.gif)
+'position-velocity' control
 
 
 ## Introduction
@@ -15,10 +17,23 @@ This project can also be classified into a visual servoing control method. Compa
 For vision part, the pattern recognition is the same as the first project using color separation method. However, the process of transforming the location information from camera image frame to Baxter coordinate is different. In this project we use both two arms' hand cameras and use linear triangulation and single value decomposition method to estimate the target location in Baxter coordinate system. 
 
 ![alt text](https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/baxter_vision.png)
+The above image is the spatial position estiamtion. The red points are the pattern recognition using color separation and the blue points are the back projecton check bsaed on our estimated spatial coordinate. The result is very good!
 
 ### Motion
 
-For motion part, using plain language, now our Baxter opens its 'eyes' and can 'see' something. We want to use its arm to move to it. based on my thought, there are three methods: position control, velocity control and 'position-velocity' control.
+For motion part, using plain language, now our Baxter opens its 'eyes' and can 'see' something. We want to use its arm to move to it. based on my thought, there are three methods: position-inverse kinematic control, velocity control and 'position-velocity' control.
+
+#### Position-inverse Kinematic Control
+
+Given target work space coordinate. Go through inverse kinematic process to get the relate configurations (joint angles). The core of this method is the inverse kinematic solver. Due to the project time limit, I can not do any better than the default Baxter solver. One of the demo videos shows the perfermance of this method. 
+
+#### Pure Velocity control
+
+With a potential function based on the start point and estimated goal point, using analysis Jacobian matrix, this method does not need to solve inverse kinematic of the robot arm chain only forward kinematic needed. The way I first want to choose but faced an issue which is the gravity of the robot arm (Zero-Gravity mode).
+
+
+#### Position-velocity control
+
 
 
 
