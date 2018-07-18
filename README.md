@@ -34,6 +34,7 @@ With a potential function based on the start point and estimated goal point, usi
 
 #### Position-velocity control
 For this project, I generate a control strategy between the above two levels of control. This control is actually still a position control because the output data still go through the joint angle API not joint velocity, but with a particular trajectory. The following one line algorithm show the strategy.
+
 ![alt text](https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/algorithm.png)
 
 
