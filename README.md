@@ -21,7 +21,7 @@ This project can also be classified into a visual servoing control method. Compa
 
 ### Vision
 
-For vision part, the pattern recognition is the same as the first project using color separation method. However, the process of transforming the location information from camera pixel frame to Baxter coordinate is different. In this project we use both two arms' hand cameras and linear triangulation with single value decomposition method combining camera intrinsic matrix to estimate the target location in Baxter coordinate system. 
+For vision part, the pattern recognition is the same as the first project using color separation method. However, the process of transforming the location information from camera pixel frame to Baxter coordinate is different. In this project i use both two arms' hand cameras and linear triangulation with single value decomposition method combining camera intrinsic matrix to estimate the target location in Baxter coordinate system. 
 
 ![alt text](https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/baxter_vision.png)
 The above image is the spatial position estiamtion. The red points are the pattern recognition using color separation and the blue points are the back projecton check bsaed on our estimated spatial coordinate. The result is very good!
