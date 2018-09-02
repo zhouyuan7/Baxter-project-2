@@ -42,7 +42,9 @@ With a potential function based on the start point and estimated goal point, usi
 #### Position-velocity control
 For this project, I generate a control strategy between the above two levels of control. This control is actually still a position control because the output data still go through the moving joint angle API not joint velocity, but with a particular trajectory. The following one line algorithm show the strategy.
 
-![alt text](https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/algorithm.png)
+<p align="center">
+<img src="https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/algorithm.png"/>
+</p>
 
 The whole movement process is divided into many tiny time steps. In each time step the difference of the joint angles between now and next time step is given by the Moore-Penrose pseudo-inverse times a given workspace trajectory velocity.
 
