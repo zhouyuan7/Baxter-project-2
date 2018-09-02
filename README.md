@@ -1,16 +1,16 @@
 # Baxter-project-2
 
 <p align="center">
-<img src="https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/hand_baxter.gif"/>
-</p>
-<p align="center">
-Position-inverse Kinematic Control
-</p>
-<p align="center">
 <img src="https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/table_own.gif"/>
 </p>
 <p align="center">
 'position-velocity' control
+</p>
+<p align="center">
+<img src="https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/hand_baxter.gif"/>
+</p>
+<p align="center">
+Position-inverse Kinematic Control
 </p>
 
 ## Introduction
