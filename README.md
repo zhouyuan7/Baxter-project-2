@@ -46,7 +46,7 @@ For this project, I generate a control strategy between the above two levels of 
 <img src="https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/algorithm.png"/>
 </p>
 
-The whole movement process is divided into many tiny time steps. In each time step the difference of the joint angles between now and next time step is given by the Moore-Penrose pseudo-inverse times a given workspace trajectory velocity.
+The whole movement process is divided into many tiny time steps. In each time step the difference of the joint angles between now and next time step is given by the Moore-Penrose pseudo-inverse of Jacobian times a given workspace trajectory velocity.
 
 However, Jacobian of the Baxter arm chain is still needed. I try to do it  by myself using Baxter D-H parameter table, but due to time limit, I use Baxter provided python method (baxter_pykdl.baxter_kinematics(‘right’).jacobian) to compute the jacobian. 
 
