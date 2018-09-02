@@ -32,7 +32,7 @@ For motion part, using plain language, now our Baxter opens its 'eyes' and can '
 
 #### Position-inverse Kinematic Control
 
-Given target work space coordinate. Go through inverse kinematic process to get the relate configurations (joint angles). The core of this method is the inverse kinematic solver. Due to the project time limit, I can not do any better than the default Baxter solver. One of the demo videos shows the perfermance of this method. 
+Given target work space coordinate. Go through inverse kinematic process to get the relate configurations (joint angles). The core of this method is the inverse kinematic solver. Due to the project time limit, I cannot do any better than the default Baxter solver. One of the demo videos shows the performance of this method. 
 
 #### Pure Velocity control
 
@@ -40,7 +40,7 @@ With a potential function based on the start point and estimated goal point, usi
 
 
 #### Position-velocity control
-For this project, I generate a control strategy between the above two levels of control. This control is actually still a position control because the output data still go through the moving joint angle API not joint velocity, but with a particular trajectory. The following one line algorithm show the strategy.
+For this project, I generate a control strategy between the above two levels of control. This control is actually still a position control because the output data still go through the moving joint angle API not joint velocity, but with a particular trajectory. The following one-line algorithm show the strategy.
 
 <p align="center">
 <img src="https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/algorithm.png"/>
@@ -48,7 +48,7 @@ For this project, I generate a control strategy between the above two levels of 
 
 The whole movement process is divided into many tiny time steps. In each time step the difference of the joint angles between now and next time step is given by the Moore-Penrose pseudo-inverse times a given workspace trajectory velocity.
 
-However Jacobian of the Baxter arm chain is still needed. I try to do it  by myself using Baxter D-H parameter table, but due to time limit, I use Baxter provided python method (baxter_pykdl.baxter_kinematics(‘right’).jacobian) to compute the jacobian. 
+However, Jacobian of the Baxter arm chain is still needed. I try to do it  by myself using Baxter D-H parameter table, but due to time limit, I use Baxter provided python method (baxter_pykdl.baxter_kinematics(‘right’).jacobian) to compute the jacobian. 
 
 
 <p align="center">
