@@ -1,8 +1,12 @@
 # Baxter-project-2
 
-![Output sample](https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/hand_baxter.gif)
+<p align="center">
+<img src="https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/hand_baxter.gif"/>
+</p>
 Position-inverse Kinematic Control
-![Output sample](https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/table_own.gif)
+<p align="center">
+<img src="https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/table_own.gif"/>
+</p>
 'position-velocity' control
 
 
@@ -42,10 +46,12 @@ The whole movement process is divided into many tiny time steps. In each time st
 However Jacobian of the Baxter arm chain is still needed. I try to do it  by myself using Baxter D-H parameter table, but due to time limit, I use Baxter provided python method (baxter_pykdl.baxter_kinematics(‘right’).jacobian) to compute the jacobian. 
 
 
-
-
-![Output sample](https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/table_baxter.gif)
-
-![Output sample](https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/hand_own.gif)
-
-![Output sample](https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/simulation.gif)
+<p align="center">
+<img src="https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/table_baxter.gif"/>
+</p>
+<p align="center">
+<img src="https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/hand_own.gif"/>
+</p>
+<p align="center">
+<img src="https://github.com/zhouyuan7/Baxter-project-2/blob/master/source/simulation.gif"/>
+</p>
